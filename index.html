@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/img/Asset 1@3x 1.svg">
+        <ul class="menu">
+            <li>Банк</li>
+            <li>Бизнес</li>
+            <li>Инвестиции</li>
+            <li>Страхование</li>
+            <li>Мобайл</li>
+            <li>Путешествия</li>
+            <li>Развлечения</li>
+        </ul>
+        <p class="login">Войти</p>
+    </header>
+    <main>
+        <h1>Конвертер валют онлайн</h1>
+        <div class="calc">
+            <div class="currency from">
+                <p class="currency__info">У меня есть</p>
+                <ul class="currency__buttons">
+                    <li class="currency__active">RUB</li>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>GBP</li>
+                    <li><select>
+                        <option>AUD</option>
+                        <option>BGN</option>
+                        <option>BRL</option>
+                        <option>CAD</option>
+                        <option>CHF</option>
+                        <option>CNY</option>
+                        <option>CZK</option>
+                        <option>DKK</option>
+                        <option>HKD</option>
+                        <option>HRK</option>
+                        <option>HUF</option>
+                        <option>IDR</option>
+                        <option>ILS</option>
+                        <option>INR</option>
+                        <option>ISK</option>
+                        <option>JPY</option>
+                        <option>KRW</option>
+                        <option>MXN</option>
+                        <option>MYR</option>
+                        <option>NOK</option>
+                        <option>NZD</option>
+                        <option>PHP</option>
+                        <option>PLN</option>
+                        <option>RON</option>
+                        <option>SEK</option>
+                        <option>SGD</option>
+                        <option>THB</option>
+                        <option>TRY</option>
+                        <option>ZAR</option>
+                    </select></li>
+                </ul>
+                <div class="currency__input">
+                    <input type="text" step="any" value="1" class="currency__input-value">
+                    <p class="currency__rate">для примера</p>
+                </div>
+            </div>
+            <button class="interchange">
+                <div class="interchange__upper">
+                    <img class="first-em" src="/img/Vector 8.svg">
+                    <img class="second-em" src="img/Rectangle 19.svg">
+                </div>
+                <div class="interchange__lower">
+                    <img class="interchange__arrow first-em" src="/img/Rectangle 19.svg">
+                    <img class="second-em" src="/img/Vector 8.svg">
+                </div>
+            </button>
+            <div class="currency to">
+                <p class="currency__info">Хочу приобрести</p>
+                <ul class="currency__buttons">
+                    <li>RUB</li>
+                    <li class="currency__active">USD</li>
+                    <li>EUR</li>
+                    <li>GBP</li>
+                    <li><select>
+                        <option>AUD</option>
+                        <option>BGN</option>
+                        <option>BRL</option>
+                        <option>CAD</option>
+                        <option>CHF</option>
+                        <option>CNY</option>
+                        <option>CZK</option>
+                        <option>DKK</option>
+                        <option>HKD</option>
+                        <option>HRK</option>
+                        <option>HUF</option>
+                        <option>IDR</option>
+                        <option>ILS</option>
+                        <option>INR</option>
+                        <option>ISK</option>
+                        <option>JPY</option>
+                        <option>KRW</option>
+                        <option>MXN</option>
+                        <option>MYR</option>
+                        <option>NOK</option>
+                        <option>NZD</option>
+                        <option>PHP</option>
+                        <option>PLN</option>
+                        <option>RON</option>
+                        <option>SEK</option>
+                        <option>SGD</option>
+                        <option>THB</option>
+                        <option>TRY</option>
+                        <option>ZAR</option>
+                    </select></li>
+                </ul>
+                <div class="currency__input">
+                    <input type="text" step="any" class="currency__input-value">
+                    <p class="currency__rate">для примера</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>

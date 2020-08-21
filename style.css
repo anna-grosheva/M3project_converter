@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 50px;
+    background-color: #F5F5F6;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+}
+
+header img {
+    width: 89px;
+    height: 23px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    color: #959BA4;
+    width: 75%;
+}
+
+.menu li {
+    margin-right: 4%;
+}
+
+.menu li:first-child {
+    color: black;
+}
+
+.login {
+    width: 58px;
+    height: 33px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+main {
+    padding-left: 20%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 50px;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+} */
+
+.calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 650px;
+}
+
+.interchange {
+    height: 38px;
+    width: 45px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin-top: 80px;
+    outline: none;
+}
+
+.interchange:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.interchange__upper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.interchange__lower {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.interchange__arrow {
+    transform: rotate(180deg);
+}
+
+.interchange__upper .second-em {
+    position: absolute;
+    left: 23px;
+}
+
+.interchange__lower .first-em {
+    position: absolute;
+    left: -3px;
+}
+
+.currency {
+    width: 260px;
+}
+
+.currency__info {
+    font-size: 12px;
+    line-height: 14px;
+    color: #9F9F9F;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+}
+
+.currency__buttons {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+}
+
+.currency__buttons li {
+    width: 20%;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C6C6C6;
+    padding: 7px 0 0 0;
+}
+
+.currency__buttons li.currency__active {
+    background-color: #833AE0;
+    color: white;
+}
+
+.currency__buttons li:hover {
+    background-color: #833AE0;
+    cursor: pointer;
+}
+
+.currency__buttons li:first-of-type:hover {
+    border-radius: 2px 0px 0px 2px;
+}
+
+.currency__buttons li:last-of-type:hover {
+    border-radius: 0px 2px 2px 0px;
+}
+
+.currency__buttons li:not(:last-of-type) {
+    border-right: 1px solid #E5E5E5;
+}
+
+.currency__buttons li select {
+    border: none;
+    height: 28px;
+    font-size: 11.5px;
+    margin-top: -7px;
+    color: #C6C6C6;
+    padding: 0;
+    letter-spacing: -0.3px;
+    background-color: transparent;
+    outline: none;
+}
+
+.currency__buttons li select:hover {
+    cursor: pointer;
+}
+
+.currency__input {
+    height: 102px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.currency__input-value {
+    width: 200px;
+    height: 60px;
+    padding-left: 14px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.currency__rate {
+    font-size: 12px;
+    line-height: 14px;
+    color: #C6C6C6;
+    margin: 0;
+    padding: 13px 0 0px 14px;
+}
+
+
