@@ -15,7 +15,7 @@ let loading = document.querySelector('.loading');
 //проверка на символ при вводе
 inputValues.forEach((inputValue) => {
     inputValue.addEventListener('keyup', (event) => {
-        if (!(event.keyCode >= 48 && event.keyCode <= 57) && (event.keyCode !== 188) && (event.keyCode !== 190) && (event.keyCode !== 8)) {
+        if (!(event.keyCode >= 48 && event.keyCode <= 57) && !(event.keyCode >= 96 && event.keyCode <= 105) && (event.keyCode !== 188) && (event.keyCode !== 190) && (event.keyCode !== 8)) {
             inputValue.value = inputValue.value.replace(inputValue.value[inputValue.value.length - 1], '');
         } else if (event.keyCode === 188) {
             inputValue.value = inputValue.value.replace(',', '.');
@@ -151,11 +151,16 @@ function enquiry(param) {
         loading.style.display = 'block';
     }, 500)
     
+    setTimeout(() => {
+        loading.style.display = 'none';
+        clearTimeout(waiting);
+    }, 5000)
+
     getPromise
-    .then(loading.style.display = 'none')
-    .then(clearTimeout(waiting))
     .then(response => response.json())
     .then(data => {
+        loading.style.display = 'none';
+        clearTimeout(waiting);
         inputValues.forEach((inputValue) => {
             exRateFrom.innerText = `1 ${A} = ${+(1 / data.rates[A]).toFixed(4)} ${B}`;
             exRateTo.innerText = `1 ${B} = ${+data.rates[A].toFixed(4)} ${A}`;
@@ -177,5 +182,5 @@ function enquiry(param) {
     .catch((error) => {
         alert('Ошибка сервера или нет интернет-соединения');
     }); 
-};
+}
 enquiry('click');

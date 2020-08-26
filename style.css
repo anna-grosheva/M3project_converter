@@ -2,14 +2,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
     height: 50px;
     background-color: #F5F5F6;
     text-transform: uppercase;
@@ -29,7 +31,7 @@ header img {
     flex-wrap: wrap;
     list-style-type: none;
     color: #959BA4;
-    width: 75%;
+    width: 70%;
 }
 
 .menu li {
@@ -51,7 +53,7 @@ header img {
 }
 
 main {
-    padding-left: 20%;
+    margin: 0 24%;
 }
 
 h1 {
@@ -60,11 +62,6 @@ h1 {
     line-height: 42px;
     margin-top: 50px;
 }
-
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    appearance: none;
-} */
 
 .calc {
     display: flex;
@@ -201,7 +198,7 @@ input::-webkit-inner-spin-button {
 }
 
 .currency__input-value {
-    width: 200px;
+    width: 230px;
     height: 60px;
     padding-left: 14px;
     font-weight: bold;
@@ -222,6 +219,7 @@ input::-webkit-inner-spin-button {
 
 .loading {
     background: rgba(0, 0, 0, 0.44);
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -236,9 +234,9 @@ input::-webkit-inner-spin-button {
     border-radius: 3px;
     width: 129px;
     height: 54px;
-    padding-top: 11px;
+    padding-top: 12px;
     position: absolute;
-    top: 35%;
-    left: 40%;
+    top: 275px;
+    left: 565px;
     background-color: white;
 }
